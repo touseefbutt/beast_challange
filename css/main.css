@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    text-align: center;
+}
+ /* Homepage CSS */
+#homebg{
+    background-color: black;
+    font-family:'Press Start 2P', cursive;
+    line-height: 2em;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+#hometxt, #logo{
+    color: #d1d09f ;
+}
+.head{
+    color: #d1d09f ;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.sections{
+    background-color:#d1d09f ;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 3vh;
+    padding-left:20px;
+    border-radius: 10px;
+    color: #000;
+}
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color:#5b5b0b
+}
+
+/* Game Page CSS */
+#gamebg{
+    background: url(../pics/game-bg.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
