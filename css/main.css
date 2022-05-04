@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Press+Start+2P&display=swap');
 
-body{
-    text-align: center;
-}
  /* Homepage CSS */
 #homebg{
     background-color: black;
     font-family:'Press Start 2P', cursive;
     line-height: 2em;
+    text-align: center;
 }
 #logo{
     display: flex;
@@ -25,7 +24,7 @@ body{
     justify-content: left;
 }
 .sections{
-    background-color:#d1d09f ;
+    background-color:#b2b27f ;
     display: flex;
     align-items: left;
     justify-content: left;
@@ -42,10 +41,83 @@ a {
 
 /* Game Page CSS */
 #gamebg{
-    background: url(../pics/game-bg.jpeg) no-repeat center center fixed; 
+    background: url(../pics/gamebg.png) no-repeat center center fixed; 
+    text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+#opc{
+    background-color: rgba(190, 196, 143, 0.5) !important;
+}
+.row{
+    font-family: 'Changa', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+.flex{
+    background-color: rgba(190, 196, 143, 0.7);
+    padding: 8px;
+    color: white;
+}
+
+input, button{
+    padding: 10px;
+    background-color: #b2b27f;
+    border: 3px solid #5b5b0b;
+    margin: 10px;
+    color: #3d3d1e;
+    outline: #5b5b0b;
+}
+.warning{
+    color: #3d3d1e;
+}
+.battle{
+    color:#0b4b52;
+}
+.player{
+    display: inline-block;
+    text-align:left ;
+
+}
+/* Tic-Tac-Toe Grid */
+.container {
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:2rem;
+    font-family: 'Changa', sans-serif;
+    }
+
+.content {
+    margin-bottom:2rem;
+}
+
+.grid {
+    text-align:center;
+    margin-bottom:2rem;
+}
+.grid_row {
+    display:flex;
+}
+.grid_row > div {
+    width:130px;
+    height:130px;
+    background-color:#0b4b52;
+    cursor:pointer;
+    margin:1px;
+    border-radius:3px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    font-size:72px;
+    /* color:white; */
+}
+
+
 
