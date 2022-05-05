@@ -6,69 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Mode</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/3e5799348a.js" crossorigin="anonymous"></script>
     <script src="../js/player.js" defer></script>
     <script src="../js/main.js" defer></script>
 </head>
 <body id="gamebg">
+        <audio src="../sound/player.mp3" id = "player" loop = "loop"></audio>
     <div class="row">
         <div>
-            <h1 class="warning">Hy Tic Tacker! Let's Play</h1>
+            <h1 class="warning" id="result">Hy Tic Tacker! Let's Play</h1>
         </div>
     </div>
-    <div class="row">
-        <div>
-            <input type="text" placeholder="Plauer 1 Name">
-        </div>
-        <div>
-            <input type="text" placeholder="Player 2 Name">
-            <button type="submit">Start Game</button>
+    <div class="col">
+        <div class="flex">
+            <div>
+                <input type="text" id="txtfp" placeholder="Player 1 Name">
+            </div>
+            <div>
+                <input type="text" id="txtsp" placeholder="Player 2 Name">
+            </div>
+            <div>
+                <button type="button" id="btnNames">Start Game</button>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class=" flex battle">
             <h2>Battle Ground</h2>
+            <label id="turn" class="battle"></label>
         </div>
     </div>
     <div class="container flex">
         <div class="grid content">
-            <div id="rowOne" class="grid_row">
-                <div id="c0" class="cell">🧑🏻‍🦱</div>
-                <div id="c1" class="cell">🧑🏻‍🦱</div>
-                <div id="c2" class="cell">🧑🏻</div>
+            <div class="grid_row">
+                <div id="c0" onclick = "turn1(); battleGround();"></div>
+                <div id="c1" onclick = "turn2(); battleGround();"></div>
+                <div id="c2" onclick = "turn3(); battleGround();"></div>
             </div>
-            <div id="rowTwo" class="grid_row division">
-                <div id="c3" class="cell">🧑🏻</div>
-                <div id="c4" class="cell">🧑🏻</div>
-                <div id="c5" class="cell">🧑🏻‍🦱</div>
+            <div class="grid_row">
+                <div id="c3" onclick = "turn4(); battleGround();"></div>
+                <div id="c4" onclick = "turn5(); battleGround();"></div>
+                <div id="c5" onclick = "turn6(); battleGround();"></div>
             </div>
-            <div id="rowThree" class="grid_row division">
-                <div id="c6" class="cell">🧑🏻‍🦱</div>
-                <div id="c7" class="cell">🧑🏻‍🦱</div>
-                <div id="c8" class="cell">🧑🏻</div>
+            <div class="grid_row">
+                <div id="c6" onclick = "turn7(); battleGround();"></div>
+                <div id="c7" onclick = "turn8(); battleGround();"></div>
+                <div id="c8" onclick = "turn9(); battleGround();"></div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class=" flex">
-            <div class="player">
-                <p>First Player : <label>haha</label></p>
-                <p>Score : <label></label></p>
+        <div class="container flex">
+            <div class="player battle">
+                <p>First Player : <label id="fpname"></label></p>
+                <p>Score : <label id="fpscore"></label></p>
             </div>
         </div>
-        <div class=" flex">
-            <div class="player">
-                <p>Second Player : <label>Player Name Here</label></p>
-                <p>Score : <label>Player Score here</label></p>
+        <div class="container flex">
+            <div class="player battle">
+                <p>Second Player : <label id="spname"></label></p>
+                <p>Score : <label id="spscore"></label></p>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class=" flex">
-            <div>
-                <label>Reset Battle Ground</label> 
-            </div>
-            <div>
-                <label>Go to Home Page</label> 
+        <div class="flex">
+            <div class="battle">
+                <i onclick="reset()" class="fa-solid fa-arrows-rotate fa-md footer"> Reset</i>
+                <i class="fa-solid fa-house fa-md"><a href="../index.html" class="footer"> Home</a></i>
             </div>
         </div>
     </div>

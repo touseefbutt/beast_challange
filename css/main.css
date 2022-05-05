@@ -6,6 +6,8 @@
     background-color: black;
     font-family:'Press Start 2P', cursive;
     line-height: 2em;
+}
+.align{
     text-align: center;
 }
 #logo{
@@ -20,20 +22,20 @@
 .head{
     color: #d1d09f ;
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .sections{
     background-color:#b2b27f ;
     display: flex;
-    align-items: left;
-    justify-content: left;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
     margin: 3vh;
     padding-left:20px;
-    border-radius: 10px;
+    border-radius:5px;
     color: #000;
 }
-a {
+.anchor {
     text-decoration: none;
     font-size: 13px;
     color:#5b5b0b
@@ -60,10 +62,21 @@ a {
     margin-top: 10px;
     font-style: italic;
 }
+.col{
+    font-family: 'Changa', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:flex-start ;
+    margin-top: 10px;
+    font-style: italic;
+}
 .flex{
     background-color: rgba(190, 196, 143, 0.7);
     padding: 8px;
     color: white;
+    width:400px;
+
 }
 
 input, button{
@@ -78,6 +91,7 @@ input, button{
     color: #3d3d1e;
 }
 .battle{
+    cursor: pointer;
     color:#0b4b52;
 }
 .player{
@@ -90,7 +104,7 @@ input, button{
     width:400px;
     margin-left:auto;
     margin-right:auto;
-    padding-top:2rem;
+    padding-top:1rem;
     font-family: 'Changa', sans-serif;
     }
 
@@ -118,6 +132,12 @@ input, button{
     font-size:72px;
     /* color:white; */
 }
-
+.footer{
+    text-decoration: none;
+    color: #0b4b52;
+}
+audio{
+    display: none;
+}
 
 
