@@ -8,8 +8,10 @@ const btnName = document.querySelector("#btnNames");
 const txtfp = document.querySelector("#txtfp");
 const txtsp = document.querySelector("#txtsp");
 const fpname = document.querySelector("#fpname");
+const fpemoji = document.querySelector("#fpemoji");
 let fpscore = document.querySelector("#fpscore");
 const spname = document.querySelector("#spname");
+const spemoji = document.querySelector("#spemoji");
 let spscore = document.querySelector("#spscore");
 let result = document.querySelector("#result");
 
@@ -17,8 +19,10 @@ let result = document.querySelector("#result");
 function nameScore() {
     fpname.innerHTML = txtfp.value;
     fpscore.innerHTML = "0";
+    fpemoji.innerHTML = "🧑🏻‍🦱";
     spname.innerHTML = txtsp.value;
     spscore.innerHTML = "0";
+    spemoji.innerHTML = "🧑🏻";
 }
 
 btnName.addEventListener('click', nameScore);

@@ -13,63 +13,67 @@
 <body id="gamebg">
     <audio src="../sound/wolf.mp3" id = "wolfSound"></audio>
     <audio src="../sound/bgmusic.mp3" id = "battle"></audio>
+    <audio src="../sound/wolf-w.mp3" id = "defeat" ></audio>
+    <div class="container">
+        <div class="flex">
+            <div class="battle">
+                <i class="fa-solid fa-house fa-md"><a href="../index.html" class="footer"> Home</a></i>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div>
-            <h1 class="warning">Aaaooooo! To your home's you runaway</h1>
+            <h1 class="warning" id = "result">Aaaooooo! To your home's you runaway</h1>
         </div>
     </div>
     <div class="row">
         <div class="flex">
-            <input type="text" placeholder="Enter your Name">
-            <button type="submit">Start Game</button>
+            <input type="text" id="txtname" placeholder="Enter your Name">
+            <button type="button" id = "btnPlayer">Start Game</button>
         </div>
     </div>
     <div class="row">
-        <div class=" flex battle">
+        <div class="flex battle">
             <h2>Battle Ground</h2>
         </div>
     </div>
     <div class="container flex">
         <div class="grid content">
             <div id="rowOne" class="grid_row">
-                <div id="c0" class="cell">🐺</div>
-                <div id="c1" class="cell">🐺</div>
-                <div id="c2" class="cell">🐺</div>
+                <div id="c0" class="cell"></div>
+                <div id="c1" class="cell"></div>
+                <div id="c2" class="cell"></div>
             </div>
-            <div id="rowTwo" class="grid_row division">
-                <div id="c3" class="cell">🧑🏻‍🦱</div>
-                <div id="c4" class="cell">🧑🏻‍🦱</div>
-                <div id="c5" class="cell">🧑🏻‍🦱</div>
+            <div id="rowTwo" class="grid_row">
+                <div id="c3" class="cell"></div>
+                <div id="c4" class="cell"></div>
+                <div id="c5" class="cell"></div>
             </div>
-            <div id="rowThree" class="grid_row division">
-                <div id="c6" class="cell">🐺</div>
-                <div id="c7" class="cell">🐺</div>
-                <div id="c8" class="cell">🐺</div>
+            <div id="rowThree" class="grid_row">
+                <div id="c6" class="cell"></div>
+                <div id="c7" class="cell"></div>
+                <div id="c8" class="cell"></div>
             </div>
+        </div>
+        <div class="battle">
+            <i class="fa-solid fa-arrows-rotate fa-md footer" id="reset"> Reset</i>
         </div>
     </div>
     <div class="row">
         <div class="container flex">
             <div class="player battle">
-                <p>Beast Name: Wolf</p>
-                <p>Score:<label></label></p>
+                <p>Beast Name: <label id="wname"></label></p>
+                <p>Beast Character: <label id="computerChar"></label></p>
+                <p>Score: <label id="wscore"></label></p>
             </div>
         </div>
         <div class="container flex">
             <div class="player battle">
-                <p>Player Name: <label>Player Name </label></p>
-                <p>Score: <label>Player Score </label></p>
+                <p>Player Name: <label id="pname"></label></p>
+                <p>Player Character: <label id="playerChar"></label></p>
+                <p>Score: <label id ="pscore"></label></p>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="flex">
-            <div class="battle">
-                <i class="fa-solid fa-arrows-rotate fa-md footer"> Reset</i>
-                <i class="fa-solid fa-house fa-md"><a href="../index.html" class="footer"> Home</a></i>
-            </div>
-        </div>
-    </div>
-
 </body>
 </html>

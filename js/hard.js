@@ -31,12 +31,12 @@ function gatherD() {
 btnName.addEventListener('click', gatherD);
 
 
-function res(){
-    bname.innerHTML = "Lion";
-    pname.innerHTML = txtname.value;
-    bscore.innerHTML = "0";
-    pscore.innerHTML = "0";
-}
+// function res(){
+//     bname.innerHTML = "Lion";
+//     pname.innerHTML = txtname.value;
+//     bscore.innerHTML = "0";
+//     pscore.innerHTML = "0";
+// }
 
 //Game Logic Start Here
 let result = document.querySelector("#result");
@@ -49,8 +49,6 @@ let player = "";
 let computer = "";
 let gameOn = false;
 let moves = 0;
-let playerMovesCopy;
-let computerMovesCopy;
 let nextMoveIdx;
 
 let computerMovesNext;

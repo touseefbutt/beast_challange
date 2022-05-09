@@ -12,6 +12,13 @@
 </head>
 <body id="gamebg">
         <audio src="../sound/player.mp3" id = "player" loop = "loop"></audio>
+        <div class="container">
+            <div class="flex">
+                <div class="battle">
+                    <i class="fa-solid fa-house fa-md"><a href="../index.html" class="footer"> Home</a></i>
+                </div>
+            </div>
+        </div>
     <div class="row">
         <div>
             <h1 class="warning" id="result">Hy Tic Tacker! Let's Play</h1>
@@ -54,29 +61,25 @@
                 <div id="c8" onclick = "turn9(); battleGround();"></div>
             </div>
         </div>
+        <div class="battle">
+            <i onclick="reset()" class="fa-solid fa-arrows-rotate fa-md footer"> Reset</i>
+        </div>
     </div>
     <div class="row">
         <div class="container flex">
             <div class="player battle">
                 <p>First Player : <label id="fpname"></label></p>
+                <p>Player Emoji: <label id="fpemoji"></label></p>
                 <p>Score : <label id="fpscore"></label></p>
             </div>
         </div>
         <div class="container flex">
             <div class="player battle">
                 <p>Second Player : <label id="spname"></label></p>
+                <p>Player Emoji: <label id="spemoji"></label></p>
                 <p>Score : <label id="spscore"></label></p>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="flex">
-            <div class="battle">
-                <i onclick="reset()" class="fa-solid fa-arrows-rotate fa-md footer"> Reset</i>
-                <i class="fa-solid fa-house fa-md"><a href="../index.html" class="footer"> Home</a></i>
-            </div>
-        </div>
-    </div>
-
 </body>
 </html>
